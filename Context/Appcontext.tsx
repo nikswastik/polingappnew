@@ -10,9 +10,10 @@ export const AppStore: React.FC = ({ children }: any) => {
   const [text, setText] = React.useState<any>();
   const [asteroidInfo, setasteroidInfo] = React.useState<any>();
   const [data, setData] = React.useState<any>([]);
+  const [current,setCurrent]=React.useState<any>({})
 
   return (
-    <AppContext.Provider value={{ text, setText,asteroidInfo, setasteroidInfo,data, setData}}>
+    <AppContext.Provider value={{ text, setText,asteroidInfo, setasteroidInfo,data, setData,current,setCurrent}}>
       {children}
     </AppContext.Provider>
   );

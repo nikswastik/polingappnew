@@ -17,7 +17,7 @@ describe("render  component",()=>{
     const page = render(<Home  {...BaseProps} />);
     expect(page);
     await new Promise((r) => {
-           setTimeout(r, 5000);
+           setTimeout(r, 7000);
           });
 })
 it("render flast list ",async()=>{

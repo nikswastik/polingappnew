@@ -1,17 +1,21 @@
 import axios from "axios";
-import React, { useEffect, useState, useContext,FC } from "react";
-import { View, Text, FlatList, StyleSheet, ScrollView } from "react-native";
+import React, { useEffect, useState, useContext, FC } from "react";
+import {
+  View,
+  Text,
+  FlatList,
+  StyleSheet,
+  ScrollView,
+  Dimensions,
+} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { AppContext } from "../Context/Appcontext";
-
-export const Home = ({navigation}:any) => {
-
-
-  
+import { Table, Row, Rows } from "react-native-table-component";
+export const Home = ({ navigation }: any) => {
   const [page, setPage] = useState<number>(0);
-  const context= useContext<any>(AppContext);
-  
+  const context = useContext<any>(AppContext);
+
   useEffect(() => {
     getData();
     const interval = setInterval(() => {
@@ -19,7 +23,6 @@ export const Home = ({navigation}:any) => {
     }, 10000);
     return () => clearInterval(interval);
   }, [page]);
-
 
   const getData = () => {
     axios
@@ -36,19 +39,53 @@ export const Home = ({navigation}:any) => {
     setPage(page + 1);
   };
 
-  const navigateHandler = () => {
+  const navigateHandler = (item: any) => {
+    context?.setCurrent(item);
     navigation.navigate("Result");
   };
   return (
     <View>
+      <View style={{ display: "flex", flexDirection: "row" }}>
+        <Text style={styles.tableHead}>Title</Text>
+        <Text style={styles.tableHead}>Author</Text>
+        <Text style={styles.tableHead}>Comments</Text>
+        <Text style={styles.tableHead}>Created at</Text>
+        <Text style={styles.tableHead}>Url</Text>
+      </View>
+
       <FlatList
-      testID="test-flatlist-item"
+        testID="test-flatlist-item"
         data={context?.data}
         onEndReachedThreshold={0.5}
         onEndReached={pageIncrement}
         renderItem={({ item, index, separators }) => (
           <View style={styles.postContainer} key={index}>
-            <View>
+            <View style={styles.tableHead}>
+              <Text
+                onPress={() => {
+                  navigateHandler(item);
+                }}
+              >
+                {item.url}
+              </Text>
+            </View>
+
+            <View style={styles.tableHead}>
+              <Text>{item.title}</Text>
+            </View>
+
+            <View style={styles.tableHead}>
+              <Text>{item.author}</Text>
+            </View>
+
+            <View style={styles.tableHead}>
+              <Text>{item.num_comments}</Text>
+            </View>
+
+            <View style={styles.tableHead}>
+              <Text>{item.created_at}</Text>
+            </View>
+            {/* <View>
               <Text style={styles.text} onPress={navigateHandler}>
                 {item.title}
               </Text>
@@ -60,7 +97,7 @@ export const Home = ({navigation}:any) => {
                 <Text style={styles.subText}>Comments:{item.num_comments}</Text>
               </View>
               <Text style={styles.subText}>Posted Date{item.created_at}</Text>
-            </View>
+            </View> */}
           </View>
         )}
       />
@@ -71,17 +108,29 @@ export const Home = ({navigation}:any) => {
 const styles = StyleSheet.create({
   postContainer: {
     backgroundColor: "#e4eded",
-    margin: 10,
+    display: "flex",
+    flexDirection: "row",
     padding: 10,
+  },
+
+  tableHead: {
+    // border: "1px solid black",
+    display: "flex",
+    flexDirection: "row",
+    padding: 10,
+    width: Dimensions.get("window").width / 6,
+    borderLeftColor: "black",
+  },
+
+  head: {
+    width: Dimensions.get("window").width / 6,
   },
   postInfoOne: {
     display: "flex",
-    // justifyContent:"center",
-    // alignItems:"center",
     flexDirection: "row",
   },
   subText: {
-    margin: 10,
+    // margin: 10,
   },
   text: {
     fontWeight: "bold",

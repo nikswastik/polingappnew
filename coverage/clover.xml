@@ -1,49 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1656063141069" clover="3.2.0">
-  <project timestamp="1656063141069" name="All files">
-    <metrics statements="29" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="7" elements="40" coveredelements="32" complexity="0" loc="29" ncloc="29" packages="2" files="3" classes="3"/>
+<coverage generated="1657205167793" clover="3.2.0">
+  <project timestamp="1657205167793" name="All files">
+    <metrics statements="32" coveredstatements="26" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="7" elements="44" coveredelements="33" complexity="0" loc="32" ncloc="32" packages="2" files="3" classes="3"/>
     <package name="Components">
-      <metrics statements="23" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="6"/>
-      <file name="Home.tsx" path="C:\Users\swastik\Documents\code3\polingapp\Components\Home.tsx">
-        <metrics statements="19" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="5"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
+      <metrics statements="25" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="6"/>
+      <file name="Home.tsx" path="C:\Users\swastik\Documents\apps\polingappnew\Components\Home.tsx">
+        <metrics statements="21" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="5"/>
+        <line num="15" count="1" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
         <line num="42" count="2" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="71" count="1" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="108" count="1" type="stmt"/>
       </file>
-      <file name="Result.tsx" path="C:\Users\swastik\Documents\code3\polingapp\Components\Result.tsx">
+      <file name="Result.tsx" path="C:\Users\swastik\Documents\apps\polingappnew\Components\Result.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Context">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="Appcontext.tsx" path="C:\Users\swastik\Documents\code3\polingapp\Context\Appcontext.tsx">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Appcontext.tsx" path="C:\Users\swastik\Documents\apps\polingappnew\Context\Appcontext.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="8" count="3" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
       </file>
     </package>
   </project>
