@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1657205167793" clover="3.2.0">
-  <project timestamp="1657205167793" name="All files">
-    <metrics statements="32" coveredstatements="26" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="7" elements="44" coveredelements="33" complexity="0" loc="32" ncloc="32" packages="2" files="3" classes="3"/>
+<coverage generated="1657522869936" clover="3.2.0">
+  <project timestamp="1657522869936" name="All files">
+    <metrics statements="30" coveredstatements="26" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="8" elements="41" coveredelements="34" complexity="0" loc="30" ncloc="30" packages="2" files="3" classes="3"/>
     <package name="Components">
-      <metrics statements="25" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="6"/>
+      <metrics statements="23" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="7"/>
       <file name="Home.tsx" path="C:\Users\swastik\Documents\apps\polingappnew\Components\Home.tsx">
-        <metrics statements="21" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="5"/>
+        <metrics statements="19" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="6"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
         <line num="27" count="2" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
         <line num="38" count="2" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
-        <line num="42" count="2" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
         <line num="46" count="2" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="108" count="1" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="110" count="1" type="stmt"/>
       </file>
       <file name="Result.tsx" path="C:\Users\swastik\Documents\apps\polingappnew\Components\Result.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

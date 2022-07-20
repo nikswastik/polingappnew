@@ -1,33 +1,35 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import "@testing-library/react-native";
 import { fireEvent, render } from "@testing-library/react-native";
 import { Home } from "./Home";
 
-
-describe("render  component",()=>{
-  jest.setTimeout(10000);
+describe("render  component", () => {
+  jest.setTimeout(30000);
   const BaseProps = {
     navigation: {
       navigate: jest.fn(),
     },
   };
 
-
-  it("render Home Component",async()=>{
-    const page = render(<Home  {...BaseProps} />);
+  it("render Home Component", async () => {
+    await new Promise((r) => {
+      setTimeout(r, 10000);
+    });
+    const page = render(<Home {...BaseProps} />);
     expect(page);
     await new Promise((r) => {
-           setTimeout(r, 7000);
-          });
-})
-it("render flast list ",async()=>{
-  const page=render(<Home/>)
-  
-  const flatlist=page.getByTestId('test-flatlist-item')
-  expect(flatlist)
-})
-})
-
+      setTimeout(r, 7000);
+    });
+  });
+  it("render flast list ", async () => {
+    const page = render(<Home />);
+    await new Promise((r) => {
+      setTimeout(r, 10000);
+    });
+    const flatlist = page.getByTestId("test-flatlist-item");
+    expect(flatlist);
+  });
+});
 
 // describe("render Country Component",()=>{
 //   const BaseProps = {
@@ -43,8 +45,7 @@ it("render flast list ",async()=>{
 //      await new Promise((r) => {
 //       setTimeout(r, 5000);
 //     });
-     
+
 //     })
-    
- 
+
 // })

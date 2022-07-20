@@ -39,10 +39,10 @@ export const Home = ({ navigation }: any) => {
     setPage(page + 1);
   };
 
-  const navigateHandler = (item: any) => {
-    context?.setCurrent(item);
-    navigation.navigate("Result");
-  };
+  // const navigateHandler = (item: any) => {
+  //   context?.setCurrent(item);
+  //   navigation.navigate("Result");
+  // };
   return (
     <View>
       <View style={{ display: "flex", flexDirection: "row" }}>
@@ -62,8 +62,10 @@ export const Home = ({ navigation }: any) => {
           <View style={styles.postContainer} key={index}>
             <View style={styles.tableHead}>
               <Text
+                testID="test-nav-item"
                 onPress={() => {
-                  navigateHandler(item);
+                  context?.setCurrent(item);
+                  navigation.navigate("Result");
                 }}
               >
                 {item.url}
@@ -114,6 +116,7 @@ const styles = StyleSheet.create({
   },
 
   tableHead: {
+    // borderBottomLeftRadius:"1px solid black",
     // border: "1px solid black",
     display: "flex",
     flexDirection: "row",
